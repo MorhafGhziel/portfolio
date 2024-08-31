@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 
@@ -53,13 +54,13 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={id === 6 ? "flex justify-center h-full" : ""}>
+      <div className={`${id === 6} && 'flex justify-center h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center")}
+              className={cn(imgClassName, "object-cover, object-center")}
             />
           )}
         </div>
