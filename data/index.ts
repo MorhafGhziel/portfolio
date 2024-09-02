@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 1,
     title: "Frontend AI Startup Landing Page",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    des: "Explore the wonders of our AI system with this captivating 2D simulation of the planets using Framer Motion.",
     img: "/p1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://ai-startup-landing-page.netlify.app/",
