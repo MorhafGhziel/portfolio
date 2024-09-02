@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "Frontend AI Startup Landing Page",
     des: "Explore the wonders of our AI system with this captivating 2D simulation of the planets using Framer Motion.",
-    img: "/p1.jpg",
+    img: "/p-1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://ai-startup-landing-page.netlify.app/",
   },
@@ -94,14 +94,14 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+  // {
+  //   id: 4,
+  //   title: "",
+  //   des: "",
+  //   img: "",
+  //   iconLists: [""],
+  //   link: "",
+  // },
 ];
 
 export const testimonials = [
