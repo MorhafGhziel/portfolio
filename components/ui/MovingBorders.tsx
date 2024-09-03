@@ -67,6 +67,8 @@ export function Button({
             "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             "linear-gradient(90deg, rgba(76,29,149,1) 0%, rgba(124,58,237,1) 100%)",
           ],
+          scale: 1.05,
+          boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
           transition: { duration: 0.6 },
         }}
       >
