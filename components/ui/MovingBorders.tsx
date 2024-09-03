@@ -32,7 +32,6 @@ export function Button({
   return (
     <Component
       className={cn(
-        // remove h-16 w-40, add  md:col-span-2
         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
         containerClassName
       )}
@@ -42,7 +41,7 @@ export function Button({
       {...otherProps}
     >
       <div
-        className="absolute inset-0 rounde-[1.75rem]"
+        className="absolute inset-0 rounded-[1.75rem]"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
         <MovingBorder duration={duration} rx="30%" ry="30%">
@@ -55,7 +54,7 @@ export function Button({
         </MovingBorder>
       </div>
 
-      <div
+      <motion.div
         className={cn(
           "relative bg-slate-900/[0.] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
           className
@@ -63,9 +62,16 @@ export function Button({
         style={{
           borderRadius: `calc(${borderRadius} * 0.96)`,
         }}
+        whileHover={{
+          background: [
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+            "linear-gradient(90deg, rgba(76,29,149,1) 0%, rgba(124,58,237,1) 100%)",
+          ],
+          transition: { duration: 0.6 },
+        }}
       >
         {children}
-      </div>
+      </motion.div>
     </Component>
   );
 }
